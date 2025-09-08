@@ -129,40 +129,38 @@
 
             <!-- QA Duration and Sprint Integration -->
             <div class="section">
-                <h2 class="section-title">Strategic Guidance: QA Duration and Sprint Integration (4-Week Sprint Model)</h2>
+                <h2 class="section-title">Strategic Guidance: QA Duration and Sprint Integration (3-Week Sprint Model)</h2>
                 
                 <div class="subsection">
                     <h3>Duration of the QA Process</h3>
-                    <p>The QA process is fully integrated within a 4-week sprint cycle.</p>
+                    <p>The QA process is fully integrated within a 3-week sprint cycle.</p>
                     <p><strong>Typical breakdown per feature/project:</strong></p>
                     
                     <ul class="timeline-list">
                         <li><strong>Week 1:</strong> Specification review, drafting of core test cases, and cross-functional validation.</li>
-                        <li><strong>Week 2–3:</strong> Continuous execution of test cases on available builds; incident logging and iterative feedback.</li>
-                        <li><strong>Week 4:</strong> Full regression sweep, retesting of fixes, and final validation.</li>
-                        <li><strong>Next Sprint:</strong> Automation of stable test cases, expanding the regression suite without slowing immediate delivery.</li>
+                        <li><strong>Week 2:</strong> Continuous execution of test cases on available builds; incident logging and iterative feedback.</li>
+                        <li><strong>Week 3:</strong> Full regression sweep, retesting of fixes, and final validation and Automation of stable test cases, expanding the regression suite without slowing immediate delivery.</li>
                     </ul>
                     
-                    <p><strong>Overall QA duration:</strong> 3–3.5 weeks within the sprint for manual design, validation, and execution. Automation is scheduled in the following sprint.</p>
+                    <p><strong>Overall QA duration:</strong> 3 weeks within the sprint for manual design, validation, and execution. Automation is scheduled in the following sprint.</p>
                 </div>
                 
                 <div class="subsection">
                     <h3>Integration into the Sprint</h3>
                     
                     <div class="sprint-week">
-                        <h4>Week 1 (Day 1–5):</h4>
+                        <h4>Week 1 (Day 1–3):</h4>
                         <ul>
                             <li>QA reviews specifications as soon as they are drafted.</li>
                             <li>3–5 initial test cases per feature are created immediately.</li>
                             <li>A 30–60 minute cross-functional validation session is held with Product and Engineering.</li>
-                            <li>Test Plan is finalized by the end of the week.</li>
+                            <li>As development progresses, QA executes test cases on staging builds.</li>
                         </ul>
                     </div>
                     
                     <div class="sprint-week">
-                        <h4>Week 2–3 (Day 6–15):</h4>
+                        <h4>Week 2 (Day 6–15):</h4>
                         <ul>
-                            <li>As development progresses, QA executes test cases on staging builds.</li>
                             <li>Continuous defect logging and risk tracking.</li>
                             <li>Additional test cases added if new edge scenarios are discovered.</li>
                             <li>Regression preparation begins.</li>
@@ -170,18 +168,12 @@
                     </div>
                     
                     <div class="sprint-week">
-                        <h4>Week 4 (Day 16–20):</h4>
+                        <h4>Week 3 (Day 16–20):</h4>
                         <ul>
                             <li>QA performs a full regression sweep across critical flows.</li>
                             <li>Retesting of fixes and defect closure.</li>
                             <li>Exit criteria are enforced: all critical/high tests passed; no open P0/P1 defects.</li>
                             <li>QA delivers a final test report before sprint review.</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="sprint-week">
-                        <h4>Next Sprint:</h4>
-                        <ul>
                             <li>Stable test cases executed in the previous sprint are automated.</li>
                             <li>Automation is incremental, ensuring the regression suite grows without delaying feature delivery.</li>
                         </ul>
