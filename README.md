@@ -5,7 +5,7 @@ Este repositorio contiene la propuesta de mejora del proceso de QA, que detalla 
 
 ## Acceso al Documento
 
-### [👉 Ver Documento QA Process Improvement Proposal](https://sebastiancerpa.github.io/qa-document/qa-process-diagram.html)
+### [Ver Documento QA Process Improvement Proposal](https://sebastiancerpa.github.io/qa-document/qa-process-diagram.html)
 
 ## Características del Documento
 - Diagrama visual del proceso de QA propuesto
