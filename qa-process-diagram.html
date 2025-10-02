@@ -11,33 +11,65 @@
     <div class="container" id="content-to-print">
         <div class="header">
             <h1>QA Process Improvement Proposal</h1>
-            <p>Transitioning to a Preventive, Specification-First QA Approach</p>
+            <p>Transitioning to a Preventive, Mini Test Plan Approach</p>
         </div>
 
         <div class="main-content">
-            <!-- Current vs Proposed Comparison -->
+            <!-- Current Context and Challenges -->
             <div class="section">
-                <h2 class="section-title">Current Context vs Proposed Approach</h2>
-                <div class="comparison">
-                    <div class="current-state">
-                        <div class="state-title">Current Reactive Approach</div>
-                        <ul class="state-content">
-                            <li>The Acceptance Criteria for the QA tickets are written after the development</li>
-                            <li>QA validation limited to confirming coded features</li>
-                            <li>No edge cases are defined based on the specs</li>
-                            <li>Lack of standardized QA documentation</li>
-                        </ul>
+                <h2 class="section-title">1. Current Context and Challenges</h2>
+                <p>At present, our QA process operates reactively within our team. Acceptance criteria for tickets are often defined after development completion, based on what developers have already implemented.</p>
+                
+                <div class="subsection">
+                    <h3>This creates specific challenges for small teams:</h3>
+                    <div class="challenges-grid">
+                        <div class="challenge-card">
+                            <h4>Communication Gaps</h4>
+                            <ul>
+                                <li>QA validation is limited to confirming coded functionality rather than ensuring alignment with Product Manager's original vision</li>
+                                <li>No standardized documentation prevents our team from having shared reference points</li>
+                                <li>Edge cases are not identified from specs</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="proposed-state">
-                        <div class="state-title">Proposed Preventive Approach</div>
-                        <ul class="state-content">
-                            <li>QA begins as soon as the specifications are completed</li>
-                            <li>Test cases designed from Specs</li>
-                            <li>Comprehensive edge case coverage</li>
-                            <li>Structured QA Documentation</li>
-                            <li>Cross-functional validation before development</li>
-                        </ul>
+                </div>
+            </div>
+
+            <!-- Objective: Mini Test Plan Approach -->
+            <div class="section">
+                <h2 class="section-title">2. Objective: Mini Test Plan Approach</h2>
+                <p>The objective is to implement a lightweight, specification-first QA approach optimized for the team.</p>
+                
+                <div class="subsection">
+                    <h3>Why "Mini" Test Plans?</h3>
+                    <div class="mini-benefits">
+                        <div class="benefit-category">
+                            <h4>Tailored for Small Teams:</h4>
+                            <ul>
+                                <li>Comprehensive enough to prevent major issues</li>
+                                <li>Concise enough for one QA to manage multiple features simultaneously</li>
+                                <li>Quick enough to fit our development pace</li>
+                            </ul>
+                        </div>
+                        <div class="benefit-category">
+                            <h4>Strategic Focus:</h4>
+                            <ul>
+                                <li>Cover critical happy paths and high-risk edge cases</li>
+                                <li>Prioritize test scenarios that matter most for product success</li>
+                                <li>Improve collaboration between Product, Design, Engineering, and QA</li>
+                            </ul>
+                        </div>
                     </div>
+                </div>
+
+                <div class="subsection">
+                    <h3>Key Goals:</h3>
+                    <ul class="goals-list">
+                        <li><strong>Early Integration:</strong> QA begins immediately when specifications are completed</li>
+                        <li><strong>Risk Prevention:</strong> Identify and mitigate issues before project starts</li>
+                        <li><strong>Team Alignment:</strong> Create shared understanding across all team members</li>
+                        <li><strong>Sustainable Process:</strong> Maintain development velocity while improving quality</li>
+                    </ul>
                 </div>
             </div>
 
@@ -57,270 +89,252 @@
                 </div>
             </div>
 
-            <!-- Recommended Workflow -->
+            <!-- Mini Test Plan Workflow -->
             <div class="section">
-                <h2 class="section-title">Recommended QA Workflow</h2>
-                <div class="workflow">
-                    <div class="workflow-step">
-                        <div class="step-number">1</div>
+                <h2 class="section-title">3. Mini Test Plan Workflow</h2>
+                <div class="workflow-steps">
+                    <div class="step">
+                        <div class="step-number">3.1</div>
                         <div class="step-content">
-                            <h3>Review of Specifications</h3>
-                            <p>QA engineers carefully read product specifications once finalized to identify ambiguities, risks, or missing details before development begins.</p>
+                            <h3>Specification Review (PRD)</h3>
+                            <p><strong>Who:</strong> QA</p>
+                            <p><strong>When:</strong> As soon as specs are drafted</p>
+                            <p><strong>Output:</strong> Initial understanding and clarification questions</p>
                         </div>
                     </div>
-
-                    <div class="workflow-step">
-                        <div class="step-number">2</div>
+                    <div class="step">
+                        <div class="step-number">3.2</div>
                         <div class="step-content">
-                            <h3>Design of Test Cases</h3>
-                            <p>Test cases are created directly from specifications and acceptance criteria.</p>
-                            <div class="step-details">
+                            <h3>Mini Test Plan Creation</h3>
+                            <div class="focus-areas">
+                                <h4>Focus Areas:</h4>
                                 <ul>
-                                    <li>Happy path scenarios</li>
-                                    <li>Edge cases and error handling</li>
-                                    <li>Business rule validations</li>
-                                    <li>Direct mapping to acceptance criteria</li>
+                                    <li>3-5 critical happy path scenarios</li>
+                                    <li>2-3 high-impact edge cases</li>
+                                    <li>1-2 error handling scenarios</li>
                                 </ul>
                             </div>
+                            <p><strong>Format:</strong> Streamlined template</p>
+                            <p><strong>Traceability:</strong> Direct mapping to acceptance criteria</p>
                         </div>
                     </div>
-
-                    <div class="workflow-step">
-                        <div class="step-number">3</div>
+                    <div class="step">
+                        <div class="step-number">3.3</div>
                         <div class="step-content">
-                            <h3>Development of Test Plan</h3>
-                            <p>The Test Plan consolidates designed test cases into a single organized framework.</p>
-                            <div class="step-details">
+                            <h3>Team Validation</h3>
+                            <p><strong>Participants:</strong> All team members</p>
+                            <div class="agenda">
+                                <h4>Agenda:</h4>
                                 <ul>
-                                    <li>Testing strategy (manual, automated, hybrid)</li>
-                                    <li>Prioritization (critical, high, medium, low)</li>
-                                    <li>Entry and exit criteria</li>
-                                    <li>Success metrics and deliverables</li>
-                                    <li>Risk identification and mitigation strategies</li>
+                                    <li>QA presents Mini Test Plan</li>
+                                    <li>Engineering validates feasibility (Optional)</li>
+                                    <li>Product confirm business alignment</li>
                                 </ul>
                             </div>
+                            <p><strong>Outcome:</strong> Aligned understanding before the project begins</p>
                         </div>
                     </div>
-
-                    <div class="workflow-step">
-                        <div class="step-number">4</div>
+                    <div class="step">
+                        <div class="step-number">3.4</div>
                         <div class="step-content">
-                            <h3>Cross-Functional Validation</h3>
-                            <p>Collaborative validation involving all stakeholders before development starts.</p>
-                            <div class="step-details">
-                                <ul>
-                                    <li><strong>Engineering:</strong> Validates technical feasibility</li>
-                                    <li><strong>Product:</strong> Ensures business requirements are captured</li>
-                                    <li><strong>QA:</strong> Refines Test Plan based on feedback</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="workflow-step">
-                        <div class="step-number">5</div>
-                        <div class="step-content">
-                            <h3>Test Execution and Iteration</h3>
-                            <p>Testing executed based on validated Test Plans with continuous improvement through feedback loops.</p>
+                            <h3>Parallel Execution</h3>
+                            <ul>
+                                <li>Test cases execute as features become available in staging</li>
+                                <li>Continuous feedback loop with developers</li>
+                                <li>Issues identified and resolved within the same sprint</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- QA Duration and Sprint Integration -->
+            <!-- Implementation (3 Phases) -->
             <div class="section">
-                <h2 class="section-title">Strategic Guidance: QA Duration and Sprint Integration (3-Week Sprint Model)</h2>
-                
-                <div class="subsection">
-                    <h3>Duration of the QA Process</h3>
-                    <p>The QA process is fully integrated within a 3-week sprint cycle.</p>
-                    <p><strong>Typical breakdown per feature/project:</strong></p>
-                    
-                    <ul class="timeline-list">
-                        <li><strong>Week 1:</strong> Specification review, drafting of core test cases, and cross-functional validation.</li>
-                        <li><strong>Week 2:</strong> Continuous execution of test cases on available builds; incident logging and iterative feedback.</li>
-                        <li><strong>Week 3:</strong> Full regression sweep, retesting of fixes, and final validation and Automation of stable test cases, expanding the regression suite without slowing immediate delivery.</li>
-                    </ul>
-                    
-                    <p><strong>Overall QA duration:</strong> 3 weeks within the sprint for manual design, validation, and execution. Automation is scheduled in the following sprint.</p>
-                </div>
-                
-                <div class="subsection">
-                    <h3>Integration into the Sprint</h3>
-                    
-                    <div class="sprint-week">
-                        <h4>Week 1 (Day 1–3):</h4>
-                        <ul>
-                            <li>QA reviews specifications as soon as they are drafted.</li>
-                            <li>3–5 initial test cases per feature are created immediately.</li>
-                            <li>A 30–60 minute cross-functional validation session is held with Product and Engineering.</li>
-                            <li>As development progresses, QA executes test cases on staging builds.</li>
-                        </ul>
+                <h2 class="section-title">4. Implementation (3 Phases)</h2>
+                <div class="implementation-phases">
+                    <div class="phase">
+                        <div class="phase-header">
+                            <h3>Phase 1: Preparation</h3>
+                        </div>
+                        <div class="phase-content">
+                            <ul>
+                                <li>QA reviews the Specs. (PRD)</li>
+                                <li>QA creates the Mini Test Plan, focusing on happy path scenarios, edge cases, and error handling scenarios</li>
+                                <li>The plan is shared with the team in a lightweight format (e.g. through Slack)</li>
+                            </ul>
+                        </div>
                     </div>
                     
-                    <div class="sprint-week">
-                        <h4>Week 2 (Day 6–15):</h4>
-                        <ul>
-                            <li>Continuous defect logging and risk tracking.</li>
-                            <li>Additional test cases added if new edge scenarios are discovered.</li>
-                            <li>Regression preparation begins.</li>
-                        </ul>
+                    <div class="phase">
+                        <div class="phase-header">
+                            <h3>Phase 2: Parallel Execution</h3>
+                        </div>
+                        <div class="phase-content">
+                            <ul>
+                                <li>When the devs have their tickets ready, testing will be performed on the Preview URL as it has always been done</li>
+                                <li>As features become available in staging, QA executes the defined test cases</li>
+                                <li>Feedback is provided to developers immediately, ideally the same day</li>
+                                <li>The Mini Test Plan is refined if new gaps or scenarios are identified during development</li>
+                            </ul>
+                        </div>
                     </div>
                     
-                    <div class="sprint-week">
-                        <h4>Week 3 (Day 16–20):</h4>
-                        <ul>
-                            <li>QA performs a full regression sweep across critical flows.</li>
-                            <li>Retesting of fixes and defect closure.</li>
-                            <li>Exit criteria are enforced: all critical/high tests passed; no open P0/P1 defects.</li>
-                            <li>QA delivers a final test report before sprint review.</li>
-                            <li>Stable test cases executed in the previous sprint are automated.</li>
-                            <li>Automation is incremental, ensuring the regression suite grows without delaying feature delivery.</li>
-                        </ul>
+                    <div class="phase">
+                        <div class="phase-header">
+                            <h3>Phase 3: Final Validation</h3>
+                        </div>
+                        <div class="phase-content">
+                            <ul>
+                                <li>QA performs a minimal regression covering the most critical flows</li>
+                                <li>QA confirms that reported issues have been fixed</li>
+                                <li>QA delivers a brief exit summary (2–3 key points: what was tested, main outcomes, and any remaining risks)</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="subsection">
-                    <h3>Example QA Timeline (4-Week Sprint)</h3>
-                    <table class="qa-timeline-table">
-                        <thead>
-                            <tr>
-                                <th>Week</th>
-                                <th>QA Activities</th>
-                                <th>Outcomes</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Spec review, draft cases, validation session, finalize Test Plan and begin execution on early builds</td>
-                                <td>QA aligned before dev starts, Early defect detection</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Continue execution, expand coverage, log defects</td>
-                                <td>Defects fixed & validated</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Regression sweep, retesting, final QA report</td>
-                                <td>Exit criteria enforced</td>
-                            </tr>
-                            <tr>
-                                <td>Next Sprint</td>
-                                <td>Automate stable cases</td>
-                                <td>Regression suite expanded</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                
-                <div class="subsection">
-                    <h3>Strategic Benefits</h3>
-                    <ul class="benefits-list">
-                        <li><strong>Distributed QA effort:</strong> Testing is spread across the sprint, avoiding late bottlenecks.</li>
-                        <li><strong>Early visibility:</strong> Product and Engineering gain insights into quality risks by Week 2.</li>
-                        <li><strong>Predictable rhythm:</strong> Regression and automation follow a stable cadence.</li>
-                        <li><strong>Release confidence:</strong> QA reports and exit criteria are available at sprint close, ensuring readiness for production.</li>
-                    </ul>
+                <div class="outcome-section">
+                    <h3>Outcome:</h3>
+                    <p>This approach integrates QA from the beginning without creating heavy processes. The workflow ensures early prevention, continuous alignment, and confident releases while maintaining team velocity.</p>
                 </div>
             </div>
 
-            <!-- Implementation Framework -->
+            <!-- QA Ticket Flow -->
             <div class="section">
-                <h2 class="section-title">Implementation Framework</h2>
-                <div class="implementation-grid">
-                    <div class="implementation-card">
-                        <h3>Embed QA in Specifications</h3>
-                        <p>Every new specification must include QA section with happy path, edge case, and error scenario test cases. Acceptance Criteria mapped to test case IDs for traceability.</p>
+                <h2 class="section-title">7. QA Ticket Flow</h2>
+                <p>QA tickets should follow the flow below:</p>
+                
+                <div class="ticket-flow">
+                    <div class="flow-step">
+                        <h3>Acceptance State</h3>
+                        <ul>
+                            <li>Tickets that reach the <strong>Acceptance</strong> state are ready to be tested</li>
+                            <li>Engineers who leave their tickets in this state should create the QA ticket and assign it to Sebastián</li>
+                        </ul>
                     </div>
-                    <div class="implementation-card">
-                        <h3>Fast-Track Validation</h3>
-                        <p>30-minute validation sessions per feature with QA, Product, and Engineering. Same-day Test Plan finalization with immediate feedback consolidation.</p>
+                    
+                    <div class="flow-step">
+                        <h3>QA Failed State</h3>
+                        <ul>
+                            <li>When a ticket is rejected, it will be moved into the <strong>QA Failed</strong> column</li>
+                            <li>Engineers should move back into <strong>In Progress</strong> when they work fixing any issue reported by QA</li>
+                            <li>When all issues are fixed, the ticket is moved back to the <strong>Acceptance</strong> column, and a new sub-task is created for QA</li>
+                        </ul>
                     </div>
-                    <div class="implementation-card">
-                        <h3>Parallel Development</h3>
-                        <p>Test Plan evolves in parallel with development. Test execution begins as soon as feature branch is available for rapid iteration.</p>
+                    
+                    <div class="flow-step">
+                        <h3>QA Success State</h3>
+                        <ul>
+                            <li>When a ticket is approved it will be moved into <strong>QA Success</strong> column</li>
+                            <li>The QA team in Linear will be used to create QA task tickets, such as writing an automated test</li>
+                        </ul>
                     </div>
-                    <div class="implementation-card">
-                        <h3>Immediate Execution</h3>
-                        <p>Test cases executed when feature is deployable in staging. Simple incident logging with clear exit criteria for release.</p>
+                </div>
+            </div>
+
+            <!-- Additional -->
+            <div class="section">
+                <h2 class="section-title">8. Additional</h2>
+                
+                <div class="additional-section">
+                    <h3>Bug tickets</h3>
+                    <p>The tickets generated when a bug is found should maintain their functionality without changes.</p>
+                </div>
+                
+                <div class="additional-section">
+                    <h3>Acceptance Criteria</h3>
+                    <p>The Acceptance Criteria of the tickets are written by the devs. This workflow remains the same.</p>
+                    <p>QA should be involved in the review of the ACs:</p>
+                    
+                    <div class="ac-involvement">
+                        <h4>Reviewing the ACs to ensure:</h4>
+                        <ul>
+                            <li>They are measurable and clear</li>
+                        </ul>
+                        
+                        <h4>Proposing improvements:</h4>
+                        <ul>
+                            <li>QA can identify gaps (e.g., "What happens if the user enters invalid data?", "What happens if the connection is lost?")</li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
             <!-- Benefits -->
             <div class="section">
-                <h2 class="section-title">Benefits of the Proposed Approach</h2>
+                <h2 class="section-title">5. Benefits</h2>
                 <div class="benefits-grid">
-                    <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="16 18 22 12 16 6"/>
-                                <polyline points="8 6 2 12 8 18"/>
-                            </svg>
-                            ENG
-                        </div>
-                        <h3>For Engineering</h3>
-                        <ul class="benefit-list">
-                            <li>Reduced rework by identifying issues early</li>
-                            <li>Clearer understanding of requirements</li>
-                            <li>Smoother and predictable development cycles</li>
+                    <div class="benefit-category">
+                        <h3>For Developers:</h3>
+                        <ul>
+                            <li><strong>Early Feedback:</strong> Issues found while context is fresh</li>
                         </ul>
                     </div>
-                    <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                                <path d="M2 17l10 5 10-5"/>
-                                <path d="M2 12l10 5 10-5"/>
-                            </svg>
-                            PROD
-                        </div>
-                        <h3>For Product</h3>
-                        <ul class="benefit-list">
-                            <li>Features match business requirements</li>
-                            <li>Reduced risks through early gap identification</li>
-                            <li>Strengthened confidence in feature quality</li>
-                        </ul>
-                    </div>
-                    <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M9 12l2 2 4-4"/>
-                                <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/>
-                            </svg>
-                            QA
-                        </div>
-                        <h3>For QA</h3>
-                        <ul class="benefit-list">
-                            <li>Transition from reactive to preventive QA</li>
-                            <li>Comprehensive coverage with structured plans</li>
-                            <li>Improved cross-functional collaboration</li>
+                    <div class="benefit-category">
+                        <h3>For QA:</h3>
+                        <ul>
+                            <li><strong>Strategic Impact:</strong> Shift from reactive to preventive approach</li>
+                            <li><strong>Efficient Resource Use:</strong> Focus on high-impact scenarios</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <!-- Adoption Plan -->
+            <!-- Why Mini Test Plans Work for Small Teams -->
             <div class="section">
-                <h2 class="section-title">Adoption Plan Timeline</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <h3>Phase 1: Pilot Implementation</h3>
-                        <p>Apply specification-first QA process to one small feature. Conduct full flow from specification review through execution.</p>
+                <h2 class="section-title">6. Why Mini Test Plans Work for Small Teams</h2>
+                <div class="mini-benefits-grid">
+                    <div class="mini-benefit-category">
+                        <h3>Resource Efficiency:</h3>
+                        <ul>
+                            <li>Parallel execution prevents end-of-sprint bottlenecks</li>
+                            <li>Focused testing maximizes impact of limited QA resources</li>
+                        </ul>
                     </div>
-                    <div class="timeline-item">
-                        <h3>Phase 2: Feedback and Refinement</h3>
-                        <p>Collect insights from Engineering and Product stakeholders. Adjust templates, processes, and workflows accordingly.</p>
+                    <div class="mini-benefit-category">
+                        <h3>Communication Enhancement:</h3>
+                        <ul>
+                            <li>Single source of truth for quality requirements</li>
+                            <li>Visual clarity for technical team members</li>
+                        </ul>
                     </div>
-                    <div class="timeline-item">
-                        <h3>Phase 3: Gradual Scaling</h3>
-                        <p>Extend the process to more features and projects. Gradually increase adoption across teams.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <h3>Phase 4: Formal Integration</h3>
-                        <p>Establish as official development process. Integrate into Definition of Ready (DoR) and Definition of Done (DoD) criteria.</p>
+                </div>
+                
+                <div class="important-note">
+                    <h3>Important Note:</h3>
+                    <p>This proposal does not place QA above Product or Engineering, nor does it mean developers must work at the pace or command of QA. Instead, QA acts as a partner from the start, ensuring alignment and risk prevention. Decisions about QA documentation and practices will be made jointly, strengthened by the feedback provided by the team.</p>
+                    <p>This way, project risks are managed as a whole, rather than in isolated parts.</p>
+                </div>
+            </div>
+
+            <!-- Additional -->
+            <div class="section">
+                <h2 class="section-title">8. Additional</h2>
+                
+                <div class="additional-section">
+                    <h3>Bug tickets</h3>
+                    <p>The tickets generated when a bug is found should maintain their functionality without changes.</p>
+                </div>
+                
+                <div class="additional-section">
+                    <h3>Acceptance Criteria</h3>
+                    <p>The Acceptance Criteria of the tickets are written by the devs. This workflow remains the same.</p>
+                    <p><strong>QA should be involved in the review of the ACs:</strong></p>
+                    
+                    <div class="ac-review-grid">
+                        <div class="ac-review-item">
+                            <h4>Reviewing the ACs to ensure:</h4>
+                            <ul>
+                                <li>They are measurable and clear.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="ac-review-item">
+                            <h4>Proposing improvements:</h4>
+                            <ul>
+                                <li>QA can identify gaps (e.g., "What happens if the user enters invalid data?", "What happens if the connection is lost?").</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
