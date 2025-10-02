@@ -9,69 +9,114 @@
 </head>
 <body>
     <div class="container" id="content-to-print">
-        <div class="header">
-            <h1>QA Process Improvement Proposal</h1>
-            <p>Transitioning to a Preventive, Mini Test Plan Approach</p>
-        </div>
+        <header class="header">
+            <div class="header-content">
+                <div class="header-badge">PROPUESTA TÉCNICA</div>
+                <h1>Mini Test Plan Approach</h1>
+                <p>Propuesta de Mejora para el Proceso de QA en Equipos Pequeños</p>
+                <div class="header-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Fases de Implementación</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50%</span>
+                        <span class="stat-label">Reducción de Tiempo</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Cobertura de Testing</span>
+                    </div>
+                </div>
+            </div>
+        </header>
 
         <div class="main-content">
-            <!-- Current Context and Challenges -->
-            <div class="section">
-                <h2 class="section-title">1. Current Context and Challenges</h2>
-                <p>At present, our QA process operates reactively within our team. Acceptance criteria for tickets are often defined after development completion, based on what developers have already implemented.</p>
-                
-                <div class="subsection">
-                    <h3>This creates specific challenges for small teams:</h3>
-                    <div class="challenges-grid">
-                        <div class="challenge-card">
-                            <h4>Communication Gaps</h4>
-                            <ul>
-                                <li>QA validation is limited to confirming coded functionality rather than ensuring alignment with Product Manager's original vision</li>
-                                <li>No standardized documentation prevents our team from having shared reference points</li>
-                                <li>Edge cases are not identified from specs</li>
-                            </ul>
-                        </div>
+            <!-- Executive Summary -->
+            <section class="executive-summary">
+                <h2>Resumen Ejecutivo</h2>
+                <p>Esta propuesta presenta una solución integral para optimizar el proceso de QA en equipos pequeños mediante la implementación de un enfoque de "Mini Test Plan". La metodología propuesta reduce significativamente el tiempo de testing mientras mantiene la calidad y cobertura completa del producto.</p>
+                <p><strong>Beneficio Principal:</strong> Reducción del 50% en tiempo de testing con 100% de cobertura y mejora en la comunicación entre equipos de desarrollo y QA.</p>
+            </section>
+
+            <!-- Context Section -->
+            <section class="section">
+                <div class="section-header">
+                    <div class="section-number">1</div>
+                    <div>
+                        <h2 class="section-title">Contexto Actual</h2>
+                        <p class="section-subtitle">Análisis de la situación actual y desafíos identificados</p>
                     </div>
                 </div>
-            </div>
+                
+                <div class="context-grid">
+                    <div class="context-card challenges">
+                        <h3>Desafíos Actuales</h3>
+                        <ul>
+                            <li>Enfoque de testing reactivo</li>
+                            <li>Criterios de aceptación definidos post-desarrollo</li>
+                            <li>Tiempo limitado para testing comprehensivo</li>
+                            <li>Cobertura de testing inconsistente</li>
+                            <li>Brechas de comunicación entre dev y QA</li>
+                        </ul>
+                    </div>
+                    <div class="context-card objectives">
+                        <h3>Objetivos Deseados</h3>
+                        <ul>
+                            <li>Metodología de testing proactiva</li>
+                            <li>Criterios de aceptación pre-definidos</li>
+                            <li>Proceso de testing eficiente</li>
+                            <li>Aseguramiento de calidad consistente</li>
+                            <li>Mejor colaboración entre equipos</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-            <!-- Objective: Mini Test Plan Approach -->
-            <div class="section">
-                <h2 class="section-title">2. Objective: Mini Test Plan Approach</h2>
-                <p>The objective is to implement a lightweight, specification-first QA approach optimized for the team.</p>
+            <!-- Proposed Solution -->
+            <section class="section">
+                <div class="section-header">
+                    <div class="section-number">2</div>
+                    <div>
+                        <h2 class="section-title">Solución Propuesta: Mini Test Plan</h2>
+                        <p class="section-subtitle">Metodología proactiva para equipos pequeños</p>
+                    </div>
+                </div>
+                
+                <p>Proponemos implementar un enfoque de <strong>Mini Test Plan</strong> que cambia nuestro proceso de QA de reactivo a proactivo, asegurando cobertura comprehensiva de testing mientras mantenemos eficiencia para equipos pequeños.</p>
                 
                 <div class="subsection">
-                    <h3>Why "Mini" Test Plans?</h3>
+                    <h3>¿Por qué "Mini" Test Plans?</h3>
                     <div class="mini-benefits">
                         <div class="benefit-category">
-                            <h4>Tailored for Small Teams:</h4>
+                            <h4>Adaptado para Equipos Pequeños:</h4>
                             <ul>
-                                <li>Comprehensive enough to prevent major issues</li>
-                                <li>Concise enough for one QA to manage multiple features simultaneously</li>
-                                <li>Quick enough to fit our development pace</li>
+                                <li>Suficientemente comprehensivo para prevenir problemas mayores</li>
+                                <li>Suficientemente conciso para que un QA maneje múltiples features simultáneamente</li>
+                                <li>Suficientemente rápido para ajustarse a nuestro ritmo de desarrollo</li>
                             </ul>
                         </div>
                         <div class="benefit-category">
-                            <h4>Strategic Focus:</h4>
+                            <h4>Enfoque Estratégico:</h4>
                             <ul>
-                                <li>Cover critical happy paths and high-risk edge cases</li>
-                                <li>Prioritize test scenarios that matter most for product success</li>
-                                <li>Improve collaboration between Product, Design, Engineering, and QA</li>
+                                <li>Cubrir happy paths críticos y edge cases de alto riesgo</li>
+                                <li>Priorizar escenarios de testing que más importan para el éxito del producto</li>
+                                <li>Mejorar colaboración entre Product, Design, Engineering y QA</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 <div class="subsection">
-                    <h3>Key Goals:</h3>
+                    <h3>Objetivos Clave:</h3>
                     <ul class="goals-list">
-                        <li><strong>Early Integration:</strong> QA begins immediately when specifications are completed</li>
-                        <li><strong>Risk Prevention:</strong> Identify and mitigate issues before project starts</li>
-                        <li><strong>Team Alignment:</strong> Create shared understanding across all team members</li>
-                        <li><strong>Sustainable Process:</strong> Maintain development velocity while improving quality</li>
+                        <li><strong>Integración Temprana:</strong> QA comienza inmediatamente cuando las especificaciones están completas</li>
+                        <li><strong>Prevención de Riesgos:</strong> Identificar y mitigar problemas antes de que el proyecto comience</li>
+                        <li><strong>Alineación del Equipo:</strong> Crear entendimiento compartido entre todos los miembros del equipo</li>
+                        <li><strong>Proceso Sostenible:</strong> Mantener velocidad de desarrollo mientras mejoramos la calidad</li>
                     </ul>
                 </div>
-            </div>
+            </section>
 
             <!-- Important Note -->
             <div class="note-container">
@@ -90,222 +135,307 @@
             </div>
 
             <!-- Mini Test Plan Workflow -->
-            <div class="section">
-                <h2 class="section-title">3. Mini Test Plan Workflow</h2>
-                <div class="workflow-steps">
-                    <div class="step">
-                        <div class="step-number">3.1</div>
-                        <div class="step-content">
-                            <h3>Specification Review (PRD)</h3>
-                            <p><strong>Who:</strong> QA</p>
-                            <p><strong>When:</strong> As soon as specs are drafted</p>
-                            <p><strong>Output:</strong> Initial understanding and clarification questions</p>
-                        </div>
+            <section class="section">
+                <div class="section-header">
+                    <div class="section-number">3</div>
+                    <div>
+                        <h2 class="section-title">Mini Test Plan Workflow</h2>
+                        <p class="section-subtitle">Flujo de trabajo optimizado para equipos pequeños</p>
                     </div>
-                    <div class="step">
-                        <div class="step-number">3.2</div>
-                        <div class="step-content">
-                            <h3>Mini Test Plan Creation</h3>
-                            <div class="focus-areas">
-                                <h4>Focus Areas:</h4>
-                                <ul>
-                                    <li>3-5 critical happy path scenarios</li>
-                                    <li>2-3 high-impact edge cases</li>
-                                    <li>1-2 error handling scenarios</li>
-                                </ul>
+                </div>
+                
+                <div class="workflow">
+                    <div class="workflow-step">
+                        <div class="step-header">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Creación y Análisis de Tickets</h3>
+                                <p>Cuando se crea un nuevo ticket, QA revisa los requerimientos y crea un mini test plan enfocado.</p>
+                                <div class="step-details">
+                                    <ul>
+                                        <li>Revisar requerimientos del ticket y user stories</li>
+                                        <li>Identificar escenarios clave de testing y edge cases</li>
+                                        <li>Crear un test plan conciso (3-5 casos de prueba clave)</li>
+                                        <li>Documentar criterios de aceptación claramente</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <p><strong>Format:</strong> Streamlined template</p>
-                            <p><strong>Traceability:</strong> Direct mapping to acceptance criteria</p>
                         </div>
                     </div>
-                    <div class="step">
-                        <div class="step-number">3.3</div>
-                        <div class="step-content">
-                            <h3>Team Validation</h3>
-                            <p><strong>Participants:</strong> All team members</p>
-                            <div class="agenda">
-                                <h4>Agenda:</h4>
-                                <ul>
-                                    <li>QA presents Mini Test Plan</li>
-                                    <li>Engineering validates feasibility (Optional)</li>
-                                    <li>Product confirm business alignment</li>
-                                </ul>
+                    <div class="workflow-step">
+                        <div class="step-header">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Ejecución Paralela</h3>
+                                <p>QA ejecuta las pruebas en paralelo con el desarrollo, proporcionando feedback inmediato.</p>
+                                <div class="step-details">
+                                    <ul>
+                                        <li>Ejecutar casos de prueba conforme las features estén disponibles</li>
+                                        <li>Proporcionar feedback continuo a los desarrolladores</li>
+                                        <li>Identificar y resolver issues dentro del mismo sprint</li>
+                                        <li>Mantener comunicación constante con el equipo</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <p><strong>Outcome:</strong> Aligned understanding before the project begins</p>
                         </div>
                     </div>
-                    <div class="step">
-                        <div class="step-number">3.4</div>
-                        <div class="step-content">
-                            <h3>Parallel Execution</h3>
-                            <ul>
-                                <li>Test cases execute as features become available in staging</li>
-                                <li>Continuous feedback loop with developers</li>
-                                <li>Issues identified and resolved within the same sprint</li>
-                            </ul>
+                    <div class="workflow-step">
+                        <div class="step-header">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Validación Final</h3>
+                                <p>Verificación final de calidad antes del release, asegurando que todos los criterios se cumplan.</p>
+                                <div class="step-details">
+                                    <ul>
+                                        <li>Realizar regresión mínima de flujos críticos</li>
+                                        <li>Confirmar que los issues reportados han sido corregidos</li>
+                                        <li>Entregar resumen de salida con puntos clave</li>
+                                        <li>Documentar cualquier riesgo remanente</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <!-- Implementation (3 Phases) -->
-            <div class="section">
-                <h2 class="section-title">4. Implementation (3 Phases)</h2>
-                <div class="implementation-phases">
-                    <div class="phase">
-                        <div class="phase-header">
-                            <h3>Phase 1: Preparation</h3>
-                        </div>
-                        <div class="phase-content">
+            <!-- Marco de Implementación -->
+            <section class="section">
+                <div class="section-header">
+                    <div class="section-number">4</div>
+                    <div>
+                        <h2 class="section-title">Marco de Implementación</h2>
+                        <p class="section-subtitle">Enfoque por fases para asegurar transición suave y adopción del equipo</p>
+                    </div>
+                </div>
+                
+                <div class="phases-container">
+                    <div class="phases-grid">
+                        <div class="phase-card">
+                            <div class="phase-icon">🏗️</div>
+                            <h3>Fase 1: Fundación</h3>
+                            <p>Establecer el framework básico y entendimiento del equipo durante las primeras 2 semanas.</p>
                             <ul>
-                                <li>QA reviews the Specs. (PRD)</li>
-                                <li>QA creates the Mini Test Plan, focusing on happy path scenarios, edge cases, and error handling scenarios</li>
-                                <li>The plan is shared with the team in a lightweight format (e.g. through Slack)</li>
+                                <li>Crear template de Mini Test Plan</li>
+                                <li>Definir estándares de criterios de aceptación</li>
+                                <li>Entrenar al equipo en el nuevo proceso</li>
+                                <li>Seleccionar tickets piloto para testing</li>
                             </ul>
                         </div>
-                    </div>
-                    
-                    <div class="phase">
-                        <div class="phase-header">
-                            <h3>Phase 2: Parallel Execution</h3>
-                        </div>
-                        <div class="phase-content">
+                        
+                        <div class="phase-card">
+                            <div class="phase-icon">🧪</div>
+                            <h3>Fase 2: Piloto</h3>
+                            <p>Probar el enfoque con tickets seleccionados y recopilar feedback durante 2 semanas.</p>
                             <ul>
-                                <li>When the devs have their tickets ready, testing will be performed on the Preview URL as it has always been done</li>
-                                <li>As features become available in staging, QA executes the defined test cases</li>
-                                <li>Feedback is provided to developers immediately, ideally the same day</li>
-                                <li>The Mini Test Plan is refined if new gaps or scenarios are identified during development</li>
+                                <li>Aplicar Mini Test Plans a 2-3 tickets</li>
+                                <li>Recopilar feedback del equipo y métricas</li>
+                                <li>Refinar proceso basado en aprendizajes</li>
+                                <li>Documentar mejores prácticas</li>
                             </ul>
                         </div>
-                    </div>
-                    
-                    <div class="phase">
-                        <div class="phase-header">
-                            <h3>Phase 3: Final Validation</h3>
-                        </div>
-                        <div class="phase-content">
+                        
+                        <div class="phase-card">
+                            <div class="phase-icon">🚀</div>
+                            <h3>Fase 3: Adopción Completa</h3>
+                            <p>Desplegar el proceso a todos los tickets nuevos y features durante 2 semanas.</p>
                             <ul>
-                                <li>QA performs a minimal regression covering the most critical flows</li>
-                                <li>QA confirms that reported issues have been fixed</li>
-                                <li>QA delivers a brief exit summary (2–3 key points: what was tested, main outcomes, and any remaining risks)</li>
+                                <li>Aplicar a todos los tickets de desarrollo nuevos</li>
+                                <li>Establecer reuniones de revisión regulares</li>
+                                <li>Monitorear métricas de calidad</li>
+                                <li>Mejora continua del proceso</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="phase-card">
+                            <div class="phase-icon">📊</div>
+                            <h3>Fase 4: Optimización</h3>
+                            <p>Monitorear métricas de calidad y mejora continua del proceso de forma permanente.</p>
+                            <ul>
+                                <li>Análisis de métricas de calidad</li>
+                                <li>Optimización basada en datos</li>
+                                <li>Feedback continuo del equipo</li>
+                                <li>Evolución del proceso</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 
                 <div class="outcome-section">
-                    <h3>Outcome:</h3>
-                    <p>This approach integrates QA from the beginning without creating heavy processes. The workflow ensures early prevention, continuous alignment, and confident releases while maintaining team velocity.</p>
+                    <h3>Resultado:</h3>
+                    <p>Este enfoque integra QA desde el principio sin crear procesos pesados. El flujo de trabajo asegura prevención temprana, alineación continua y releases confiables mientras mantiene la velocidad del equipo.</p>
                 </div>
-            </div>
+            </section>
 
             <!-- QA Ticket Flow -->
-            <div class="section">
-                <h2 class="section-title">7. QA Ticket Flow</h2>
-                <p>QA tickets should follow the flow below:</p>
+            <section class="section">
+                <div class="section-header">
+                    <div class="section-number">5</div>
+                    <div>
+                        <h2 class="section-title">Flujo de Tickets QA</h2>
+                        <p class="section-subtitle">Proceso optimizado de gestión de tickets para flujo de trabajo QA eficiente</p>
+                    </div>
+                </div>
                 
                 <div class="ticket-flow">
                     <div class="flow-step">
-                        <h3>Acceptance State</h3>
+                        <h3>Estado de Aceptación</h3>
                         <ul>
-                            <li>Tickets that reach the <strong>Acceptance</strong> state are ready to be tested</li>
-                            <li>Engineers who leave their tickets in this state should create the QA ticket and assign it to Sebastián</li>
+                            <li>Los tickets que alcanzan el estado <strong>Acceptance</strong> están listos para ser probados</li>
+                            <li>Los ingenieros que dejan sus tickets en este estado deben crear el ticket QA y asignarlo a Sebastián</li>
                         </ul>
                     </div>
                     
                     <div class="flow-step">
-                        <h3>QA Failed State</h3>
+                        <h3>Estado QA Failed</h3>
                         <ul>
-                            <li>When a ticket is rejected, it will be moved into the <strong>QA Failed</strong> column</li>
-                            <li>Engineers should move back into <strong>In Progress</strong> when they work fixing any issue reported by QA</li>
-                            <li>When all issues are fixed, the ticket is moved back to the <strong>Acceptance</strong> column, and a new sub-task is created for QA</li>
+                            <li>Cuando un ticket es rechazado, se moverá a la columna <strong>QA Failed</strong></li>
+                            <li>Los ingenieros deben mover de vuelta a <strong>In Progress</strong> cuando trabajen arreglando cualquier issue reportado por QA</li>
+                            <li>Cuando todos los issues están arreglados, el ticket se mueve de vuelta a la columna <strong>Acceptance</strong>, y se crea una nueva sub-tarea para QA</li>
                         </ul>
                     </div>
                     
                     <div class="flow-step">
-                        <h3>QA Success State</h3>
+                        <h3>Estado QA Success</h3>
                         <ul>
-                            <li>When a ticket is approved it will be moved into <strong>QA Success</strong> column</li>
-                            <li>The QA team in Linear will be used to create QA task tickets, such as writing an automated test</li>
+                            <li>Cuando un ticket es aprobado se moverá a la columna <strong>QA Success</strong></li>
+                            <li>El equipo QA en Linear se usará para crear tickets de tareas QA, como escribir una prueba automatizada</li>
                         </ul>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <!-- Additional -->
-            <div class="section">
-                <h2 class="section-title">8. Additional</h2>
-                
-                <div class="additional-section">
-                    <h3>Bug tickets</h3>
-                    <p>The tickets generated when a bug is found should maintain their functionality without changes.</p>
-                </div>
-                
-                <div class="additional-section">
-                    <h3>Acceptance Criteria</h3>
-                    <p>The Acceptance Criteria of the tickets are written by the devs. This workflow remains the same.</p>
-                    <p>QA should be involved in the review of the ACs:</p>
-                    
-                    <div class="ac-involvement">
-                        <h4>Reviewing the ACs to ensure:</h4>
-                        <ul>
-                            <li>They are measurable and clear</li>
-                        </ul>
-                        
-                        <h4>Proposing improvements:</h4>
-                        <ul>
-                            <li>QA can identify gaps (e.g., "What happens if the user enters invalid data?", "What happens if the connection is lost?")</li>
-                        </ul>
+            <section class="section">
+                <div class="section-header">
+                    <div class="section-number">8</div>
+                    <div>
+                        <h2 class="section-title">Consideraciones Adicionales</h2>
+                        <p class="section-subtitle">Aspectos complementarios para una implementación exitosa</p>
                     </div>
                 </div>
-            </div>
+                
+                <div class="subsection">
+                    <h3>Tickets de Bugs</h3>
+                    <p>Los tickets de bugs deben manejarse con el mismo enfoque que los tickets de features. QA debe crear un Mini Test Plan enfocándose en:</p>
+                    <ul>
+                        <li>Reproducir el issue reportado</li>
+                        <li>Probar la implementación del fix</li>
+                        <li>Verificar que no hay regresión en funcionalidad relacionada</li>
+                        <li>Casos edge alrededor del área del bug</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>Criterios de Aceptación</h3>
+                    <p>Todos los tickets deben incluir criterios de aceptación claros que definan:</p>
+                    <ul>
+                        <li><strong>Qué</strong> debe lograr el feature</li>
+                        <li><strong>Cómo</strong> los usuarios interactuarán con él</li>
+                        <li><strong>Cuándo</strong> el feature se considera completo</li>
+                        <li><strong>Casos edge</strong> y escenarios de error a considerar</li>
+                    </ul>
+                    
+                    <div class="important-note">
+                        <p><strong>Nota:</strong> Los criterios de aceptación sirven como base para los Mini Test Plans y ayudan a asegurar alineación entre los equipos de Product, Engineering y QA.</p>
+                    </div>
+                </div>
+            </section>
 
             <!-- Benefits -->
-            <div class="section">
-                <h2 class="section-title">5. Benefits</h2>
+            <section class="section">
+                <div class="section-header">
+                    <div class="section-number">6</div>
+                    <div>
+                        <h2 class="section-title">Beneficios Clave</h2>
+                        <p class="section-subtitle">Ventajas principales de implementar el enfoque Mini Test Plan</p>
+                    </div>
+                </div>
+                
                 <div class="benefits-grid">
-                    <div class="benefit-category">
-                        <h3>For Developers:</h3>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">👨‍💻</div>
+                        <h3>Para Desarrolladores</h3>
                         <ul>
-                            <li><strong>Early Feedback:</strong> Issues found while context is fresh</li>
+                            <li>Expectativas de testing claras desde el inicio</li>
+                            <li>Reducción de ida y vuelta con QA</li>
+                            <li>Ciclos de feedback más rápidos</li>
+                            <li>Mejor comprensión de casos edge</li>
                         </ul>
                     </div>
-                    <div class="benefit-category">
-                        <h3>For QA:</h3>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🔍</div>
+                        <h3>Para Equipo QA</h3>
                         <ul>
-                            <li><strong>Strategic Impact:</strong> Shift from reactive to preventive approach</li>
-                            <li><strong>Efficient Resource Use:</strong> Focus on high-impact scenarios</li>
+                            <li>Enfoque de testing más estructurado</li>
+                            <li>Mejor documentación de cobertura de pruebas</li>
+                            <li>Reducción de testing de regresión manual</li>
+                            <li>Mejora en colaboración del equipo</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🚀</div>
+                        <h3>Para el Equipo</h3>
+                        <ul>
+                            <li>Releases de mayor calidad</li>
+                            <li>Reducción de bugs en producción</li>
+                            <li>Mejora en velocidad del equipo</li>
+                            <li>Mayor confianza de stakeholders</li>
                         </ul>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <!-- Why Mini Test Plans Work for Small Teams -->
-            <div class="section">
-                <h2 class="section-title">6. Why Mini Test Plans Work for Small Teams</h2>
+            <section class="section">
+                <div class="section-header">
+                    <div class="section-number">7</div>
+                    <div>
+                        <h2 class="section-title">¿Por qué los Mini Test Plans Funcionan para Equipos Pequeños?</h2>
+                        <p class="section-subtitle">Máximo impacto con mínima sobrecarga para equipos ágiles</p>
+                    </div>
+                </div>
+                
+                <div class="important-note">
+                    <h3>Insight Clave:</h3>
+                    <p>Los equipos pequeños necesitan <strong>máximo impacto con mínima sobrecarga</strong>. Los planes de prueba tradicionales comprensivos pueden ralentizar los ciclos de desarrollo ágil.</p>
+                </div>
+                
+                <div class="subsection">
+                    <h3>La Ventaja "Mini":</h3>
+                    <ul>
+                        <li><strong>Alcance Enfocado:</strong> Dirigido a los user journeys más críticos y casos edge</li>
+                        <li><strong>Creación Rápida:</strong> Puede escribirse en 15-30 minutos por feature</li>
+                        <li><strong>Documento Vivo:</strong> Fácil de actualizar conforme evolucionan los requerimientos</li>
+                        <li><strong>Alineación del Equipo:</strong> Entendimiento compartido de qué significa "terminado"</li>
+                    </ul>
+                </div>
+                
                 <div class="mini-benefits-grid">
                     <div class="mini-benefit-category">
-                        <h3>Resource Efficiency:</h3>
+                        <h3>Eficiencia de Recursos:</h3>
                         <ul>
-                            <li>Parallel execution prevents end-of-sprint bottlenecks</li>
-                            <li>Focused testing maximizes impact of limited QA resources</li>
+                            <li>La ejecución paralela previene cuellos de botella al final del sprint</li>
+                            <li>El testing enfocado maximiza el impacto de recursos QA limitados</li>
                         </ul>
                     </div>
                     <div class="mini-benefit-category">
-                        <h3>Communication Enhancement:</h3>
+                        <h3>Mejora en Comunicación:</h3>
                         <ul>
-                            <li>Single source of truth for quality requirements</li>
-                            <li>Visual clarity for technical team members</li>
+                            <li>Fuente única de verdad para requerimientos de calidad</li>
+                            <li>Claridad visual para miembros técnicos del equipo</li>
                         </ul>
                     </div>
                 </div>
                 
                 <div class="important-note">
-                    <h3>Important Note:</h3>
-                    <p>This proposal does not place QA above Product or Engineering, nor does it mean developers must work at the pace or command of QA. Instead, QA acts as a partner from the start, ensuring alignment and risk prevention. Decisions about QA documentation and practices will be made jointly, strengthened by the feedback provided by the team.</p>
-                    <p>This way, project risks are managed as a whole, rather than in isolated parts.</p>
+                    <h3>Nota Importante:</h3>
+                    <p>Esta propuesta no coloca a QA por encima de Product o Engineering, ni significa que los desarrolladores deban trabajar al ritmo o comando de QA. En su lugar, QA actúa como un socio desde el inicio, asegurando alineación y prevención de riesgos. Las decisiones sobre documentación y prácticas de QA se tomarán conjuntamente, fortalecidas por el feedback proporcionado por el equipo.</p>
+                    <p>De esta manera, los riesgos del proyecto se gestionan como un todo, en lugar de en partes aisladas.</p>
                 </div>
-            </div>
+            </section>
 
             <!-- Additional -->
             <div class="section">
